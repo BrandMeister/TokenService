@@ -18,7 +18,7 @@
     'application' => $parameters['project_id'],
     'token'       => $token['access_token'],
     'expires'     => $token['expires_in']
-	);
+  );
 
   $data = json_encode($response);
 
