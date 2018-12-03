@@ -14,10 +14,10 @@
   $token = $client->getAccessToken();
 
   $response = array(
-    'type'        => 'FCM-HTTP-v1',
-    'application' => $parameters['project_id'],
-    'token'       => $token['access_token'],
-    'expires'     => $token['expires_in']
+    'type'    => 'FCM-HTTP-v1',
+    'project' => $parameters['project_id'],
+    'token'   => $token['access_token'],
+    'expires' => $token['expires_in']
   );
 
   $data = json_encode($response);
