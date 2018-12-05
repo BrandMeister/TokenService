@@ -14,7 +14,7 @@
   $token = $client->getAccessToken();
 
   $response = array(
-    'type'    => 'FCM-HTTP-v1',
+    'type'    => 'FCM HTTP v1',
     'project' => $parameters['project_id'],
     'token'   => $token['access_token'],
     'expires' => $token['expires_in']
